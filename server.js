@@ -1,16 +1,14 @@
 const http = require("http");
 const express = require("express");
 const app = express();
+const PORT = process.env.PORT || 3000; //si lo tienen ocupado poner otro puerto
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-  console.log(process.env.SECRET_KEY);
   res.send(` <h1>Servidor corriendo en puerto: ${PORT} 💫</h1>`);
 });
-
-const PORT = process.env.PORT || 3000; //si lo tienen ocupado poner otro puerto
 
 try {
   app.listen(PORT, () =>
