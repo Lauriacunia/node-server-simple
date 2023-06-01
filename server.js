@@ -1,7 +1,6 @@
-const http = require("http");
-const express = require("express");
+import express from "express";
 const app = express();
-const PORT = process.env.PORT || 3000; //si lo tienen ocupado poner otro puerto
+const PORT = process.env.PORT || 8080; //si lo tienen ocupado poner otro puerto
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

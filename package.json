@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "* 1- Crear el package json ```       npm init -y ```      * 2- Instalar nodemon de forma global o como dependencia de desarrollo (flag) ```        npm install nodemon -g ```  * 3- Crear un scrips en package json para que nodemon se ejecute en cada cambio ```    \"scripts\": {          \"start\": \"nodemon server.js\"       },  ``` * 4- Para que nodemon se ejecute en cada cambio, ejecutar:     opcion 1: nodemon server.js     opcion 2: corriendo el script en package json: npm run start * 5-Instalar el modulo de express",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "nodemon server.js"
+    "start" : "node server.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",

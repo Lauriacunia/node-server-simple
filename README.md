@@ -20,9 +20,13 @@
       },
 ```
 
-- 4- Para que nodemon se ejecute en cada cambio, ejecutar:
-  opcion 1: nodemon server.js
-  opcion 2: corriendo el script en package json: npm run start
+- 4- Opcional-> usar module (imports)
+  Agregar en el package.json:
+
+```
+ "type": "module",
+```
+
 - 5-Instalar el modulo de express
 
 ```
