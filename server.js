@@ -1,6 +1,6 @@
 import express from "express";
 const app = express();
-const PORT = process.env.PORT || 8080; //si lo tienen ocupado poner otro puerto
+const PORT = process.env.PORT || 8080;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
